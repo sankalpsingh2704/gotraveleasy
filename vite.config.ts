@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Served from the root of the custom domain (gotraveleasy.in, see public/CNAME).
 // Without the custom domain, build with BASE_PATH=/gotraveleasy/ for
